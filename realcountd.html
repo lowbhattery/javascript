@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    p{
+
+        background-color: red;
+    }
+#demo{
+    font-size:8rem;
+    text-align: center;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-top: 300px;
+    
+}
+
+</style>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    
+const countdown=new Date("may 11,2023 12:00:00").getTime()
+let x = setInterval(function(){
+const now=new Date().getTime()
+const distance=countdown-now
+
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+let hours=Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60))
+
+let minutes=Math.floor((distance % (1000 * 60 * 60 )) / (1000 * 60 ))
+
+
+let seconds=Math.floor((distance % (1000 * 60)) / (1000))
+
+
+document.getElementById("demo").innerHTML=days +"d"+" "+hours+"h"+" "+minutes+"s"+" "+seconds+"s"
+if(distance<0){
+    clearInterval(x)
+    document.getElementById("demo").innerHTML="boom"
+}
+
+
+
+
+ })
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    input[type=text], select, textarea {
+      width: 50%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    
+    }
+    input{
+        margin-left: 230px;
+    }
+    
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      box-shadow: 0px 4px 8px 0px rgba(0, 0,0, 0.6),0px 4px 8px 0px rgba(0, 0,0, 0.6);
+   
+    }
+
+    
+</style>
+
+</body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<br>
+    <label for="country">Country</label>
+    <select style="margin-left: 250px;" id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+<br>
+    <label for="subject" style="margin-left: 5px; margin-top:2000px;">Subject </label>
+    <br>
+    <textarea style="margin-left: 310px; height: 6cm; resize: none;" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+<br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</html>
